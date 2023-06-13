@@ -49,7 +49,7 @@ async function run() {
             const query = { _id: new ObjectId(id) }
             const updateDoc = {
                 $set: {
-                    status: 'complete'
+                    status: 'completed'
                 },
             };
             const result = await taskCollection.updateOne(query, updateDoc);
